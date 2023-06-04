@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url("fonts/Inter-Light.woff2") format("woff2"),
+    url("fonts/Inter-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Inter-Regular.woff2") format("woff2"),
+    url("fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url("fonts/Inter-Medium.woff2") format("woff2"),
+    url("fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/Inter-Bold.woff2") format("woff2"),
+    url("fonts/Inter-Bold.woff") format("woff");
+}
+
+html {
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Inter', serif
+}
+
+body {
+    margin: 0;
+    line-height: inherit;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+article::before, article::after {
+    display: table;
+    content: ' ';
+}
+
+article::after {
+    clear: both;
+}
+
+.title {
+    font-size: 4em;
+    font-weight: lighter;
+    margin: 2rem 0;
+}
+.h1 {
+    font-size: 2em;
+}
+.h2 {
+    color: #444444;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+article {
+    max-width: 50rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2rem;
+}
+
+small {
+    font-size: 80%;
+}
+.avatar{
+    height: 1em;
+    width: 1em;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact div {
+    width: 25rem;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: #ccc;
+}
+
+a:active {
+    background-color: #ccc;
+}
+
+a:visited {
+    background-color: #ccc;
+}
+.tags > span {
+    background-color: #030303;
+    color: #dedede;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: smaller;
+    line-height: 2.2em;
+}
+
+.table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse:separate;
+}
+
+.timeline {
+    font-size: 0.85em;
+}
+.seperator {
+    border-top: 1px solid;
+    filter: invert(0.5);
+    width: 5rem;
+}
+.timeline > p {
+    margin: 0.5em 0;
+}
+.job-description {
+    padding-top: 0.5em;
+    padding-bottom: 3rem;
+}
+
+td {
+    vertical-align: top;
+}
+
+ol,
+ul,
+menu {
+    list-style: square;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #121212;
+        color: #dedede;
+    }
+    .tags > span {
+        background-color: #1F1B24;
+    }
+    .h2 {
+        color: #cccccc;
+    }
+    a {
+        color: #dedede;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        background-color: #ccc;
+        color: #121212;
+    }
+
+    a:active {
+        background-color: #ccc;
+        color: #121212;
+    }
+}
+
+@media print {
+    body {
+
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        margin: 0 2rem;
+        overflow-x: hidden;
+        padding-top: 0;
+
+        line-height: normal;
+    }
+
+    .tags > span {
+        line-height: 2.5em;
+    }
+
+    .contact div {
+        font-size: 0.8em;
+    }
+
+}
